@@ -1,10 +1,11 @@
-import { DataStore } from './js/base/Datastore.js'
-import { Background } from './js/sprite/Background.js';
-import { Director } from './js/Director.js';
-import { StartButton } from './js/sprite/StartButton.js';
-import { Score } from './js/sprite/Score.js';
+// import { DataStore } from './js/base/Datastore.js'
+// import { Background } from './js/sprite/Background.js';
+// import { Director } from './js/Director.js';
+// import { StartButton } from './js/sprite/StartButton.js';
+// import { Score } from './js/sprite/Score.js';
 
-export class Main {
+// export class Main {
+class Main {
     constructor() {
         this.dataStore = DataStore.getInstance()
         this.director = Director.getInstance()
@@ -76,3 +77,5 @@ export class Main {
     }
 
 }
+
+

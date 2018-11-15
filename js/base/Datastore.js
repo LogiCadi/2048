@@ -1,4 +1,5 @@
-export class DataStore {
+ class DataStore {
+// export class DataStore {
     constructor() {
         this.map = new Map()
         this.isAnimate = new Map()

@@ -1,6 +1,7 @@
-import { DataStore } from "../base/Datastore.js";
+// import { DataStore } from "../base/Datastore.js";
 
-export class Background {
+ class Background {
+// export class Background {
     constructor() {
 
     }

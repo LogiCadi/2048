@@ -18,18 +18,57 @@
             height: 100%;
             overflow: hidden;
         }
-        #game-canvas{
+
+        /* #tips {
+            text-align: center;
+            display: none;
+            color: #888;
             position: relative;
-            top:50%;
-            left:50%;
-            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        } */
+
+        #game-canvas {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 
 <body>
-    <canvas id="game-canvas" width="375" height="667"></canvas>
-    <script src="game.js" type="module"></script>
+    <!-- <div id="tips">请使用非X5内核浏览器</br>微信内点击右上角打开浏览器</div> -->
+    <canvas id="game-canvas" width="375" height="667">该浏览器不支持canvas</canvas>
+    <!-- <script src="./res/vconsole.min.js"></script>
+    <script>
+        // 初始化
+        var vConsole = new VConsole();
+        console.log('Hello world');
+    </script> -->
+    <!-- <script>
+        window.onload = function () {
+            // console.log(navigator.userAgent)
+            if (navigator.userAgent.indexOf('QQ') != -1) {
+                console.log('X5内核')
+                document.getElementById('tips').style.display = 'block'
+            }
+        }
+    </script> -->
+
+    <script src="./js/base/Datastore.js"></script>
+
+    <script src="./js/sprite/Background.js"></script>
+    <script src="./js/sprite/StartButton.js"></script>
+    <script src="./js/sprite/Score.js"></script>
+    <script src="./js/sprite/Block.js"></script>
+
+    <script src="./js/Director.js"></script>
+
+    <script src="./Main.js"></script>
+
+    <script src="./game.js"></script>
 </body>
 
 </html>

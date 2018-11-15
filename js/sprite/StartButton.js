@@ -1,6 +1,7 @@
-import { DataStore } from "../base/Datastore.js";
+// import { DataStore } from "../base/Datastore.js";
 
-export class StartButton {
+ class StartButton {
+// export class StartButton {
     constructor() {
         this.dataStore = DataStore.getInstance()
 

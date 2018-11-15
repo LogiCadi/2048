@@ -1,7 +1,8 @@
-import { DataStore } from "./base/Datastore.js";
-import { Block } from "./sprite/Block.js";
+// import { DataStore } from "./base/Datastore.js";
+// import { Block } from "./sprite/Block.js";
 
-export class Director {
+class Director {
+    // export class Director {
     constructor() {
         this.dataStore = DataStore.getInstance()
     }
@@ -78,7 +79,7 @@ export class Director {
      */
     moveCheck(arr) {
         const blockList = this.dataStore.get('block')
-       
+
         for (let i = 0; i < 16; i++) {
             if (i % 4 != 0 && blockList.get(arr[i])) {
                 // console.log(arr[i])

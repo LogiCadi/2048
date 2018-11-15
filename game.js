@@ -1,4 +1,6 @@
-import { Main } from './Main.js'
+// console.log('成功加载game.js')
+
+// import { Main } from './Main.js'
 
 const ele = document.getElementById('game-canvas')
 // canvas画布始终保持16：9比例
@@ -11,3 +13,4 @@ if (window.innerHeight / window.innerWidth > 16 / 9) {
 }
 
 new Main()
+

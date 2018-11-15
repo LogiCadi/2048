@@ -1,6 +1,7 @@
-import { DataStore } from '../base/Datastore.js'
+// import { DataStore } from '../base/Datastore.js'
 
-export class Block {
+ class Block {
+// export class Block {
     constructor(site, isNew = true, num = 2) {
         this.dataStore = DataStore.getInstance()
 
